@@ -12,7 +12,7 @@ working_directory = os.path.dirname(os.path.abspath(__file__))
 
 # loading the api key
 
-GOOGLE_API_KEY = os.getenv["GOOGLE_API_KEY"]
+GOOGLE_API_KEY = os.getenv(["GOOGLE_API_KEY"])
 
 #configuring google.generativeai with API key
 
