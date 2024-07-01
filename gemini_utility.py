@@ -7,12 +7,12 @@ import google.generativeai as genai
 #get the working directory
 working_directory = os.path.dirname(os.path.abspath(__file__))
 
-config_file_path = f"{working_directory}/config.json"
-config_data = json.load(open(config_file_path))
+# config_file_path = f"{working_directory}/config.json"
+# config_data = json.load(open(config_file_path))
 
 # loading the api key
 
-GOOGLE_API_KEY = config_data["GOOGLE_API_KEY"]
+GOOGLE_API_KEY = os.getenv["GOOGLE_API_KEY"]
 
 #configuring google.generativeai with API key
 
