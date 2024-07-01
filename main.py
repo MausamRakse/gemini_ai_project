@@ -65,7 +65,7 @@ if selected == "ChatBot":
 
     if user_prompt:
         # add user's message to chat and display it
-        st.chat_message("user").markdown(user_prompt)
+        st.chat_message("user").markdown("Your name is ALPHA developed by MOUSAM RAKSE your work is to answer users query and answer the given query "+user_prompt)
 
         # Send user's message to Gemini-pro and gegt the response
         gemini_response = st.session_state.chat_session.send_message(user_prompt) # renamed for clarity
